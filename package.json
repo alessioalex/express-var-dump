@@ -1,0 +1,32 @@
+{
+  "name": "express-var-dump",
+  "version": "1.0.0",
+  "description": "Express view helper that displays all kinds of data (post, query, string, params, cookies, session).",
+  "main": "index.js",
+  "dependencies": {
+    "pretty-print-json": "0.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-alessioalex": "1.0.2",
+    "eslint-config-semistandard": "15.0.0",
+    "husky": "3.0.4",
+    "standardx": "5.0.0",
+    "tape": "4.11.0"
+  },
+  "scripts": {
+    "test": "standardx && node test",
+    "precommit": "npm run test"
+  },
+  "keywords": [
+    "expressjs",
+    "express",
+    "var-dump",
+    "express-development"
+  ],
+  "author": "Alexandru Vlăduţu <github@social.alessioalex.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alessioalex/express-var-dump.git"
+  }
+}
