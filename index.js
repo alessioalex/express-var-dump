@@ -2,6 +2,8 @@
 
 const prettyPrintJson = require('pretty-print-json');
 
+// copied from
+// https://github.com/center-key/pretty-print-json/blob/master/pretty-print-json.css
 const style = `
 /* pretty-print-json ~ MIT License */
 
@@ -41,7 +43,7 @@ function varDump(props, parent) {
  */
 
 function addVarDumpViewHelper(req, res, next) {
-  const defaultProps = ['cookies', 'session', 'query', 'params', 'body'];
+  const defaultProps = ['cookies', 'session', 'query', 'params', 'body', 'headers'];
 
   res.locals.varDump = function varDumpHelper(props = defaultProps, parent = req) {
     return varDump(props, parent);
